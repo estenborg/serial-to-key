@@ -1,0 +1,23 @@
+{
+  "keyPressDelay": ".05",
+  "mappings": [
+    {
+      "id": "BUTTON0",
+      "states": ["press"],
+      "key": "a",
+      "modifiers": ["SHIFT"]
+    },
+    {
+      "id": "SWITCH0",
+      "states": ["on", "off"],
+      "key": "b",
+      "modifiers": []
+    },
+    {
+      "id": "DIAL0",
+      "states": ["up", "down"],
+      "key": "c",
+      "modifiers": ["ALT"]
+    }
+  ]
+}
