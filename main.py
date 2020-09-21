@@ -42,11 +42,17 @@ def key_press(mapping):
     else:
         alt_context = nullcontext
 
+    if 'CTRL' in mapping.modifiers:
+        ctrl_context = keyboard.pressed(Key.ctrl)
+    else:
+        ctrl_context = nullcontext
+
     with shift_context:
         with alt_context:
-            keyboard.press(mapping.key)
-            time.sleep(key_delay)
-            keyboard.release(mapping.key)
+            with ctrl_context:
+                keyboard.press(mapping.key)
+                time.sleep(key_delay)
+                keyboard.release(mapping.key)
 
 
 # Initialize everything
@@ -71,6 +77,7 @@ while True:
         continue
 
     # Use the mapping to press the key
+    print("Activating mapping for: " + key_mapping.name)
     key_press(key_mapping)
 
 

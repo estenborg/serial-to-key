@@ -2,22 +2,172 @@
   "keyPressDelay": ".05",
   "mappings": [
     {
-      "id": "BUTTON0",
-      "states": ["press"],
-      "key": "a",
-      "modifiers": ["SHIFT"]
-    },
-    {
+      "name": "Toggle Master Battery",
       "id": "SWITCH0",
       "states": ["on", "off"],
       "key": "b",
+      "modifiers": ["ALT"]
+    },
+    {
+      "name": "Toggle Master Alternator",
+      "id": "SWITCH1",
+      "states": ["on", "off"],
+      "key": "a",
+      "modifiers": ["ALT"]
+    },
+    {
+      "name": "Avionics Master 1 on",
+      "id": "SWITCH2",
+      "states": ["on"],
+      "key": "]",
+      "modifiers": ["ALT"]
+    },
+    {
+      "name": "Avionics Master 1 off",
+      "id": "SWITCH2",
+      "states": ["off"],
+      "key": "[",
+      "modifiers": ["ALT"]
+    },
+    {
+      "name": "Avionics Master 2 on",
+      "id": "SWITCH3",
+      "states": ["on"],
+      "key": "=",
+      "modifiers": ["ALT"]
+    },
+    {
+      "name": "Avionics Master 2 off",
+      "id": "SWITCH3",
+      "states": ["off"],
+      "key": "-",
+      "modifiers": ["ALT"]
+    },
+    {
+      "name": "Toggle Beacon Lights",
+      "id": "SWITCH4",
+      "states": ["on", "off"],
+      "key": "h",
+      "modifiers": ["ALT"]
+    },
+    {
+      "name": "Toggle Landing Lights",
+      "id": "SWITCH5",
+      "states": ["on", "off"],
+      "key": "l",
+      "modifiers": ["CTRL"]
+    },
+    {
+      "name": "Toggle Taxi Lights",
+      "id": "SWITCH6",
+      "states": ["on", "off"],
+      "key": "j",
+      "modifiers": ["ALT"]
+    },
+    {
+      "name": "Toggle Nav Lights",
+      "id": "SWITCH7",
+      "states": ["on", "off"],
+      "key": "n",
+      "modifiers": ["ALT"]
+    },
+    {
+      "name": "Toggle Strobe Lights",
+      "id": "SWITCH8",
+      "states": ["on", "off"],
+      "key": "o",
       "modifiers": []
     },
     {
+      "name": "Magnetos Start",
+      "id": "BUTTON0",
+      "states": ["click"],
+      "key": "g",
+      "modifiers": ["SHIFT", "ALT"]
+    },
+    {
+      "name": "Toggle Autopilot Master",
+      "id": "BUTTON1",
+      "states": ["click"],
+      "key": "z",
+      "modifiers": []
+    },
+    {
+      "name": "Decrease Flaps",
+      "id": "BUTTON5",
+      "states": ["click"],
+      "key": "F6",
+      "modifiers": []
+    },
+    {
+      "name": "Increase Flaps",
+      "id": "BUTTON10",
+      "states": ["click"],
+      "key": "F7",
+      "modifiers": []
+    },
+    {
+      "name": "Decrease Autopilot Altitude",
       "id": "DIAL0",
-      "states": ["up", "down"],
-      "key": "c",
-      "modifiers": ["ALT"]
+      "states": ["down"],
+      "key": "PgDn",
+      "modifiers": ["CTRL"]
+    },
+    {
+      "name": "Increase Autopilot Altitude",
+      "id": "DIAL0",
+      "states": ["up"],
+      "key": "PgUp",
+      "modifiers": ["CTRL"]
+    },
+    {
+      "name": "Decrease Autopilot Heading",
+      "id": "DIAL1",
+      "states": ["down"],
+      "key": "Del",
+      "modifiers": ["CTRL"]
+    },
+    {
+      "name": "Increase Autopilot Heading",
+      "id": "DIAL1",
+      "states": ["up"],
+      "key": "Ins",
+      "modifiers": ["CTRL"]
+    },
+    {
+      "name": "Decrease COM 1 - Whole",
+      "id": "DIAL2",
+      "states": ["down"],
+      "key": "",
+      "modifiers": [""]
+    },
+    {
+      "name": "Increase COM 1 - Whole",
+      "id": "DIAL2",
+      "states": ["up"],
+      "key": "",
+      "modifiers": [""]
+    },
+    {
+      "name": "Swap COM 1 Frequencies",
+      "id": "DIAL2",
+      "states": ["click"],
+      "key": "",
+      "modifiers": [""]
+    },
+    {
+      "name": "Decrease COM 1 - Fractional",
+      "id": "DIAL3",
+      "states": ["down"],
+      "key": "",
+      "modifiers": [""]
+    },
+    {
+      "name": "Increase COM 1 - Fractional",
+      "id": "DIAL3",
+      "states": ["up"],
+      "key": "",
+      "modifiers": [""]
     }
   ]
 }
